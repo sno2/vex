@@ -1,0 +1,8 @@
+[package]
+name = "parser"
+version = "0.1.0"
+authors = ["Carter Snook <cartersnook04@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+nom = "6.2"

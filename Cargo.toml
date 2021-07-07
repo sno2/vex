@@ -1,0 +1,7 @@
+[workspace]
+members = [
+	"parser",
+	"minifier",
+	"prefect",
+	"vex"
+]
