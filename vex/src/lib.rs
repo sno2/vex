@@ -1,8 +1,10 @@
 use parser::Scope;
 
 pub trait Plugin {
-	fn transform_ast(&self, scope: &mut Scope);
-	fn serialize(&self, scope: &Scope) -> Option<String>;
+	fn transform_ast(&self, _: &mut Scope) {}
+	fn serialize(&self, _: &Scope) -> Option<String> {
+		None
+	}
 }
 
 pub fn vex<T: AsRef<str>>(input: T, plugins: Vec<impl Plugin>) -> Option<String> {

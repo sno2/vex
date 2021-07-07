@@ -13,7 +13,6 @@ impl Plugin for Minifier {
 	fn serialize(&self, scope: &Scope) -> Option<String> {
 		Some(scope.minify())
 	}
-	fn transform_ast(&self, _: &mut Scope) {}
 }
 
 /// A trait for minifying CSS.
